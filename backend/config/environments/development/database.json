@@ -1,0 +1,21 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "strapi-hook-mongoose",
+      "settings": {
+        "client": "mongo",
+        "host": "ds217970.mlab.com",
+        "srv": false,
+        "port": "17970",
+        "database": "ielts",
+        "username": "ielts",
+        "password": "IELTS123"
+      },
+      "options": {
+        "authenticationDatabase": "ielts",
+        "ssl": false
+      }
+    }
+  }
+}

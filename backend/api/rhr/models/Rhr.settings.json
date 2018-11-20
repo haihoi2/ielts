@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "rhr",
+    "description": "Review Handout Record"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "default": "",
+      "type": "string"
+    },
+    "Content": {
+      "default": "",
+      "type": "text"
+    },
+    "Grade": {
+      "default": "",
+      "type": "decimal"
+    },
+    "handout": {
+      "model": "handout",
+      "via": "rhrs"
+    }
+  }
+}

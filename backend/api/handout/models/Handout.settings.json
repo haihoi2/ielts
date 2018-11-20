@@ -1,0 +1,31 @@
+{
+  "connection": "default",
+  "collectionName": "handout",
+  "info": {
+    "name": "handout",
+    "description": "Handout"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "default": "",
+      "type": "string"
+    },
+    "Content": {
+      "default": "",
+      "type": "text"
+    },
+    "Image": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "rhrs": {
+      "collection": "rhr",
+      "via": "handout"
+    }
+  }
+}

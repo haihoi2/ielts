@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/handouts",
+      "handler": "Handout.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/handouts/count",
+      "handler": "Handout.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/handouts/:_id",
+      "handler": "Handout.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/handouts",
+      "handler": "Handout.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/handouts/:_id",
+      "handler": "Handout.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/handouts/:_id",
+      "handler": "Handout.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
